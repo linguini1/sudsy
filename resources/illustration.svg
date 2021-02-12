@@ -1,0 +1,28 @@
+<svg id="Wash_illustration" data-name="Wash illustration" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="797" height="582" viewBox="0 0 797 582">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="332" height="327"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="797" height="582" rx="97" fill="#46494c"/>
+  <g id="Icon" transform="translate(377 125)" clip-path="url(#clip-path)">
+    <path id="Side" d="M0,0H56l.017,261.043L0,315Z" transform="translate(270.495 5.644)" fill="#ac175d"/>
+    <path id="Top" d="M55.86,0H321L265,53.861H0Z" transform="translate(5.5 5.644)" fill="#d61771"/>
+    <rect id="Panel" width="264.995" height="261.138" transform="translate(5.5 59.506)" fill="#fb0e7d"/>
+    <circle id="Hole" cx="75" cy="75" r="75" transform="translate(64 132.076)" fill="#ede9ec"/>
+    <rect id="Mid_2" data-name="Mid 2" width="31" height="16" rx="8" transform="translate(17 95)" fill="#ede9ec"/>
+    <rect id="Mid_1" data-name="Mid 1" width="31" height="16" rx="8" transform="translate(17 70)" fill="#ede9ec"/>
+    <rect id="Dot" width="16" height="16" rx="8" transform="translate(56 70)" fill="#ede9ec"/>
+    <rect id="Long" width="177" height="16" rx="8" transform="translate(80 70)" fill="#ede9ec"/>
+  </g>
+  <g id="Shirt" transform="translate(76.577 217.5)">
+    <path id="Path_1" data-name="Path 1" d="M0,0H104.368V147H0Z" transform="translate(45.537 0)" fill="#fb0e7d"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="37.911" height="74.274" transform="matrix(0.788, -0.616, 0.616, 0.788, 119.842, 23.34)" fill="#fb0e7d"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="37.911" height="74.274" transform="matrix(-0.788, -0.616, 0.616, -0.788, 29.874, 81.869)" fill="#fb0e7d"/>
+    <path id="Exclusion_1" data-name="Exclusion 1" d="M74.264,70H0L37.132,0l12,22.615L37.905,41.222H59L49.128,22.615,59.953,4.667,82,41.222H59L74.264,70Z" transform="translate(56.823 41)" fill="#ede9ec"/>
+  </g>
+  <g id="Arrow" transform="translate(162.163 379.488)">
+    <path id="Path_2" data-name="Path 2" d="M-12.2-24.012C-48.961,116.638,248.979,171.964,293.754,88.466" transform="translate(15.337 24.012)" fill="none" stroke="#ede9ec" stroke-linecap="round" stroke-width="10"/>
+    <path id="Path_3" data-name="Path 3" d="M29,0,58,61,29,40.038,0,61Z" transform="translate(305.491 60.012) rotate(30)" fill="#ede9ec"/>
+  </g>
+</svg>

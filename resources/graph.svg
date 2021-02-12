@@ -1,0 +1,27 @@
+<svg id="Graph" xmlns="http://www.w3.org/2000/svg" width="902" height="494" viewBox="0 0 902 494">
+  <rect id="Rectangle_2" data-name="Rectangle 2" width="902" height="494" rx="64" fill="#dfd9de"/>
+  <g id="Axis" transform="translate(30 82.5)">
+    <line id="Line_1" data-name="Line 1" y2="329" transform="translate(58)" fill="none" stroke="#46494c" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_2" data-name="Line 2" x1="731.5" transform="translate(58 329)" fill="none" stroke="#46494c" stroke-linecap="round" stroke-width="7"/>
+    <text id="TIME" transform="translate(385 381.5)" fill="#46494c" font-size="28" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">TIME</tspan></text>
+    <text id="THINGS_WASHED" data-name="THINGS WASHED" transform="translate(27 291.5) rotate(-90)" fill="#46494c" font-size="28" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">THINGS WASHED</tspan></text>
+  </g>
+  <g id="Data" transform="translate(112 88)">
+    <line id="Line_3" data-name="Line 3" x1="224" y2="57" transform="translate(0 239)" fill="none" stroke="#e3c34f" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_4" data-name="Line 4" x1="112" y2="95" transform="translate(515)" fill="none" stroke="#e3c34f" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_5" data-name="Line 5" x1="86" y2="102" transform="translate(224 137)" fill="none" stroke="#e3c34f" stroke-linecap="round" stroke-width="7"/>
+    <line id="Line_6" data-name="Line 6" x1="205" y2="42" transform="translate(310 95)" fill="none" stroke="#e3c34f" stroke-linecap="round" stroke-width="7"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(212 227)" fill="#dfd9de" stroke="#e3c34f" stroke-width="6">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="9" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(503 83)" fill="#dfd9de" stroke="#e3c34f" stroke-width="6">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="9" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(298 125)" fill="#dfd9de" stroke="#e3c34f" stroke-width="6">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="9" fill="none"/>
+    </g>
+  </g>
+</svg>

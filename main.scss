@@ -1,0 +1,739 @@
+// Colours
+$primary: #EDE9EC;
+$secondary: #46494C;
+$tertiary: #E3C34F;
+$accent: #FB0E7D;
+
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+// Mix-ins
+$tablet: 681px;
+$widescreen: 820px;
+$desktop: 1200px;
+$ultra-wide: 1500px;
+$fullscreen: 1920px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin widescreen {
+    @media (min-width: #{$widescreen}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin ultrawide {
+    @media (min-width: #{$ultra-wide}) {
+        @content;
+    }
+}
+
+@mixin fullscreen {
+    @media (min-width: #{$fullscreen}) {
+        @content;
+    }
+}
+
+//Code
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: $primary;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    overflow: auto; // removes weird gaps between sections
+}
+
+a, button {
+    cursor: pointer;
+}
+
+
+// HEADING
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+
+    .desktop {
+        display: none;
+    }
+
+    .logo {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    @include desktop {
+        background-color: $secondary;
+        padding: 1em 5em;
+        justify-content: space-between;
+
+        .desktop {
+            display: contents;
+        }
+
+        nav {
+            
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding: 0 2em;
+
+                    a {
+                        color: $accent;
+                        text-decoration: none;
+                        font-size: 1.2em;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logo {
+            width: 20%;
+            max-width: 200px;
+        }
+    }
+
+    @include fullscreen {
+        padding: 2em 8em;
+
+        nav ul li a {
+            font-size: 2em;
+        }
+    }
+}
+
+// HERO SECTION
+.hero {
+
+    @include desktop {
+        display: flex;
+        padding: 10em 8em;
+        justify-content: space-between;
+    }
+
+    @include fullscreen {
+        padding: 14em 8em;
+        justify-content: center;
+    }
+
+    .desktop {
+        display: none;
+
+        @include desktop {
+            display: contents;
+
+            img {
+                height: 100%;
+                max-width: 50%;
+            }
+        }
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 0 2em;
+
+        @include desktop {
+            text-align: left;
+            padding: 0;
+            width: 45%;
+        }
+        
+        h1 {
+            color: $accent;
+            font-size: 2em;
+
+            @include tablet {
+                font-size: 2.8em;
+                margin-top: 1em;
+            }
+
+            @include desktop {
+                margin-top: 0;
+                margin-bottom: .2em;
+            }
+
+            @include ultrawide {
+                font-size: 4em;
+            }
+
+            @include fullscreen {
+                font-size: 5.5em;
+            }
+        }
+
+        p {
+            font-size: .8em;
+            padding: 0 3em;
+            margin-bottom: 0;
+            color: $secondary;
+
+            @include tablet {
+                font-size: 1.2em;
+            }
+
+            @include desktop {
+                margin: 0;
+                padding: 0;
+            }
+
+            @include ultrawide {
+                font-size: 1.8em;
+            }
+        }
+
+        .emphasis {
+            color: $accent;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        button {
+            display: block;
+            margin: 2em auto 0;
+            background-color: $tertiary;
+            border: none;
+            width: 160px;
+            height: 2em;
+            border-radius: 1em;
+
+            @include tablet {
+                height: 2.5em;
+                width: 250px;
+                font-size: 1.5em;
+                border-radius: 1.25em;
+            }
+
+            @include desktop {
+                margin: 5% 0;
+                width: 50%;
+                height: 2em;
+            }
+
+            @include fullscreen {
+                width: 15em;
+                height: 3em;
+                border-radius: 1.5em;
+            }
+
+            &:hover {
+                background-color: darken($tertiary, 10%);
+            }
+
+            a {
+                color: $primary;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                
+                @include desktop {
+                    font-size: .8em;
+                }
+
+                @include fullscreen {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .scroll {
+            width: 40px;
+            margin: 4em auto;
+
+            @include desktop {
+                height: 25%;
+                margin: 0;
+            }
+
+            @include fullscreen {
+                height: 9em;
+                width: auto;
+            }
+
+            circle {
+                animation-duration: 1.3s;
+                animation-name: scrollWheel;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
+                @keyframes scrollWheel {
+                    from {
+                        transform: translateX(161px) translateY(817px);
+                    }
+                    to {
+                        transform: translateX(161px) translateY(877px);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// WASHING SECTION
+.wash-things {
+    background-color: $tertiary;
+    padding: 1em 2em;
+    text-align: center;
+
+    .desktop {
+        display: none;
+    }
+
+    @include desktop {
+        .mobile {
+            display: none;
+        }
+    }
+
+    h1 {
+        color: $accent;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .wash-content {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        color: $secondary;
+        line-height: 2em;
+
+        img {
+            margin-right: 5%;
+        }
+
+        li {
+
+            font-size: 12px;
+
+            &:hover {
+                color: $accent;
+            }
+
+            @include tablet {
+                font-size: 14px;
+            }
+
+            @include widescreen {
+                font-size: 18px;
+            }
+
+            @include desktop {
+                font-size: 24px;
+            }
+
+            @include ultrawide {
+                font-size: 30px;
+            }
+        }
+
+        @include tablet {
+            width: 100%;
+
+            h1 {
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(8em, .5fr));
+                padding: 1.5em;
+            }
+        }
+
+        @include widescreen {
+            ul {
+                grid-template-columns: repeat(auto-fit, minmax(8.5em, .5fr));
+            }
+        }
+
+        @include desktop {
+            align-items: center;
+
+            .desktop {
+                display: contents;
+            }
+
+            .illustration {
+                height: 100%;
+                max-width: 50%;
+            }
+
+            .wash-text {
+
+                h1 {
+                    font-size: 40px;
+                    margin: 0;
+                }
+
+                ul {
+                    grid-template-columns: repeat(2, auto);
+                    line-height: 3em;
+                }
+            }
+        }
+
+        @include ultrawide {
+            .wash-text h1 {
+                font-size: 60px;
+            }
+        }
+
+        @include fullscreen {
+            .wash-text {
+                h1 {
+                    font-size: 70px;
+                }
+
+                ul {
+                    line-height: 6em;
+
+                    li {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        padding: 2em 2em;
+        display: block;
+
+        .desktop {
+            display: contents;
+
+            img {
+                width: 50%;
+                max-width: 280px;
+            }
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 2%;
+            font-size: 28px;
+        }
+
+        .wash-text {
+            width: 50%;
+        }
+    }
+
+    @include desktop {
+        padding: 4em;
+    }
+
+    @include fullscreen {
+        padding: 8em 10em;
+    }
+}
+
+// ABOUT SECTION
+.about {
+    background-color: $secondary;
+    text-align: center;
+    padding: 1em 2em 2em 2em;
+
+    @include desktop {
+        text-align: left;
+        padding: 2em 4em 4em;
+    }
+
+    @include fullscreen {
+        padding: 6em 8em;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    h1 {
+        color: $tertiary;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 28px;
+        }
+
+        @include desktop {
+            font-size: 40px;
+        }
+
+        @include ultrawide {
+            font-size: 60px;
+        }
+
+        @include fullscreen {
+            font-size: 90px;
+            margin-top: 0;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+
+        li:not(:last-child){
+            margin-bottom: 1.5em;
+        }
+
+        @include widescreen {
+            display: flex;
+
+            li {
+                margin: 1em .5em;
+            }
+        }
+
+        @include desktop {
+            align-items: center;
+            
+            .desktop {
+                display: contents;
+
+                img {
+                    width: 3em;
+                }
+            }
+            
+            li {
+                margin: 0;
+
+                &:not(:last-child) {
+                    margin: 0;
+                }
+
+                &:nth-child(even) {
+                    margin: 0 1.5em;
+                }
+            }
+
+        }
+
+        @include fullscreen {
+            .desktop img {
+                width: 5em;
+            }
+
+            li:nth-child(even) {
+                margin: 0 4em;
+            }
+        }
+
+        .card {
+            background-color: $primary;
+            border-radius: 2em;
+            padding: 1em 2em;
+
+            &:hover {
+                background-color: lighten($accent, 40%);
+            }
+
+            h2 {
+                color: $accent;
+                text-transform: uppercase;
+                font-size: 1em;
+
+                @include desktop {
+                    font-size: 1.5em;
+                }
+
+                @include ultrawide {
+                    font-size: 1.8em;
+                }
+
+                @include fullscreen {
+                    font-size: 2.2em;
+                }
+            }
+
+            @include desktop {
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+            @include ultrawide {
+                font-size: 20px;
+            }
+
+            @include fullscreen {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+// CONTACT SECTION
+.contact {
+    background-color: $primary;
+    text-align: center;
+    padding: 1em 2em;
+
+    @include desktop {
+        padding: 2em 4em;
+        text-align: left;
+    }
+
+    h1 {
+        color: $accent;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 28px;
+        }
+
+        @include desktop {
+            font-size: 40px;
+        }
+
+        @include ultrawide {
+            font-size: 60px;
+        }
+
+        @include fullscreen {
+            font-size: 90px;
+        }
+    }
+
+    form {
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 45%;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            text-transform: uppercase;
+            color: $secondary;
+            font-size: 10px;
+            margin-top: 10px;
+
+            @include desktop {
+                font-size: 14px;
+            }
+
+            @include fullscreen {
+                font-size: 26px;
+                margin-top: 30px;
+            }
+        }
+        
+        input, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+
+            @include desktop {
+                font-size: 25px;
+            }
+
+            @include fullscreen {
+                font-size: 44px;
+            }
+        }
+
+        .submit {
+            display: block;
+            width: 50%;
+            margin: 1.5em auto;
+            background-color: $accent;
+            border: none;
+            font-family: "Montserrat", sans-serif;
+            height: 26px;
+            color: $primary;
+            font-weight: bold;
+            border-radius: 13px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($accent, 10%);
+            }
+
+            @include desktop {
+                margin: 1.5em 0;
+                height: 2em;
+                width: 30%;
+                border-radius: 1.5em;
+                font-size: 18px;
+            }
+
+            @include fullscreen {
+                height: 3em;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .map {
+        border: solid;
+        border-color: $secondary;
+        border-width: 5px;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include tablet {
+            margin-left: 2em;
+            width: 50%;
+        }
+
+        @include desktop {
+            margin: 0;
+        }
+    }
+
+    @include tablet {
+
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @include desktop {
+        justify-content: center;
+    }
+}

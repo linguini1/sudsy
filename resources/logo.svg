@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="307" height="82" viewBox="0 0 307 82">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="84" height="82" transform="translate(0 0.241)"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" transform="translate(-140 -37)">
+    <g id="Logo-2" data-name="Logo" transform="translate(140 36.759)" clip-path="url(#clip-path)">
+      <path id="Side" d="M0,0H14.019l0,65.35L0,78.858Z" transform="translate(67.716 1.413)" fill="#ac175d"/>
+      <path id="Top" d="M13.984,0H80.36L66.341,13.484H0Z" transform="translate(1.377 1.413)" fill="#d61771"/>
+      <rect id="Panel" width="66.34" height="65.374" transform="translate(1.377 14.897)" fill="#fb0e7d"/>
+      <circle id="Hole" cx="18.776" cy="18.776" r="18.776" transform="translate(16.022 33.064)" fill="#ede9ec"/>
+      <rect id="Mid_2" data-name="Mid 2" width="8" height="4" rx="2" transform="translate(4 24.241)" fill="#ede9ec"/>
+      <rect id="Mid_1" data-name="Mid 1" width="8" height="4" rx="2" transform="translate(4 17.241)" fill="#ede9ec"/>
+      <rect id="Dot" width="4" height="4" rx="2" transform="translate(14 17.241)" fill="#ede9ec"/>
+      <rect id="Long" width="45" height="4" rx="2" transform="translate(20 17.241)" fill="#ede9ec"/>
+    </g>
+    <text id="SUDSY" transform="translate(240 96)" fill="#fb0e7d" font-size="58" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">SUDSY</tspan></text>
+  </g>
+</svg>

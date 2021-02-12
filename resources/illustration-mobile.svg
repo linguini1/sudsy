@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="317" viewBox="0 0 146 317">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="92" height="92" transform="translate(0)"/>
+    </clipPath>
+  </defs>
+  <g id="Wash_illustration" data-name="Wash illustration" transform="translate(13 360)">
+    <rect id="BG" width="146" height="317" rx="27" transform="translate(-13 -360)" fill="#46494c"/>
+    <g id="Arrow" transform="translate(50.086 -266.033)">
+      <path id="Path_3" data-name="Path 3" d="M10.2,0,20.4,21.591,10.2,14.173,0,21.6Z" transform="matrix(-0.999, 0.035, -0.035, -0.999, 21.138, 93.262)" fill="#ede9ec"/>
+      <line id="Line_7" data-name="Line 7" y2="83.071" transform="translate(10.123 0)" fill="none" stroke="#ede9ec" stroke-width="3"/>
+    </g>
+    <g id="Icon" transform="translate(15 -162)" clip-path="url(#clip-path)">
+      <path id="Side" d="M0,0H15.584l0,73.123L0,88.237Z" transform="translate(74.664 1.913)" fill="#ac175d"/>
+      <path id="Top" d="M15.545,0H89.328L73.744,15.087H0Z" transform="translate(0.921 1.913)" fill="#d61771"/>
+      <rect id="Panel" width="73.743" height="73.15" transform="translate(0.921 17.001)" fill="#fb0e7d"/>
+      <ellipse id="Hole" cx="20.871" cy="21.009" rx="20.871" ry="21.009" transform="translate(17.2 37.329)" fill="#ede9ec"/>
+      <rect id="Mid_2" data-name="Mid 2" width="9" height="5" rx="2.5" transform="translate(4 27)" fill="#ede9ec"/>
+      <rect id="Mid_1" data-name="Mid 1" width="9" height="5" rx="2.5" transform="translate(4 19)" fill="#ede9ec"/>
+      <rect id="Dot" width="4" height="5" rx="2" transform="translate(15 19)" fill="#ede9ec"/>
+      <rect id="Long" width="48" height="5" rx="2.5" transform="translate(22 19)" fill="#ede9ec"/>
+    </g>
+    <g id="Shirt" transform="translate(25.55 -337.21)">
+      <path id="Path_1" data-name="Path 1" d="M0,0H36.7V52.037H0Z" transform="translate(16.106 0)" fill="#fb0e7d"/>
+      <path id="Path_6" data-name="Path 6" d="M.084.043,13.449,0l-.084,26.227L0,26.269Z" transform="matrix(0.788, -0.616, 0.616, 0.788, 42.144, 8.28)" fill="#fb0e7d"/>
+      <path id="Path_7" data-name="Path 7" d="M0,0,13.365.043l.084,26.227L.084,26.227Z" transform="matrix(-0.788, -0.616, 0.616, -0.788, 10.598, 28.981)" fill="#fb0e7d"/>
+      <path id="Exclusion_1" data-name="Exclusion 1" d="M26.116,24.779H0L13.058,0l4.219,8.005L13.33,14.592h7.418L17.277,8.005l3.807-6.353,7.753,12.94H20.748l5.368,10.187Z" transform="translate(20.075 14.514)" fill="#ede9ec"/>
+    </g>
+  </g>
+</svg>

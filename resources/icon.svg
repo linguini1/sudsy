@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321.017" height="315" viewBox="0 0 321.017 315">
+  <g id="icon" transform="translate(-5.5 -5.644)">
+    <g id="Washer">
+      <path id="Side" d="M0,0H56l.017,261.043L0,315Z" transform="translate(270.495 5.644)" fill="#ac175d"/>
+      <path id="Top" d="M55.86,0H321L265,53.861H0Z" transform="translate(5.5 5.644)" fill="#d61771"/>
+      <rect id="Panel" width="264.995" height="261.138" transform="translate(5.5 59.506)" fill="#fb0e7d"/>
+    </g>
+    <circle id="Hole" cx="75" cy="75" r="75" transform="translate(64 132.076)" fill="#ede9ec"/>
+    <g id="Buttons">
+      <rect id="Mid_2" data-name="Mid 2" width="31" height="16" rx="8" transform="translate(17 95)" fill="#ede9ec"/>
+      <rect id="Mid_1" data-name="Mid 1" width="31" height="16" rx="8" transform="translate(17 70)" fill="#ede9ec"/>
+      <rect id="Dot" width="16" height="16" rx="8" transform="translate(56 70)" fill="#ede9ec"/>
+      <rect id="Long" width="177" height="16" rx="8" transform="translate(80 70)" fill="#ede9ec"/>
+    </g>
+  </g>
+</svg>
