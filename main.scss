@@ -51,6 +51,7 @@ body, html {
     padding: 0;
     background-color: $primary;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -59,6 +60,12 @@ section {
 
 a, button {
     cursor: pointer;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 
@@ -103,9 +110,11 @@ a, button {
                         color: $accent;
                         text-decoration: none;
                         font-size: 1.2em;
+                        padding: 10%;
 
                         &:hover {
-                            text-decoration: underline;
+                            background-color: $accent;
+                            color: $secondary;
                         }
                     }
                 }
@@ -331,10 +340,6 @@ a, button {
         li {
 
             font-size: 12px;
-
-            &:hover {
-                color: $accent;
-            }
 
             @include tablet {
                 font-size: 14px;
@@ -663,6 +668,8 @@ a, button {
             box-sizing: border-box;
             border: none;
             font-family: 'Montserrat', sans-serif;
+            outline-color: $accent;
+            padding: 2%;
 
             @include desktop {
                 font-size: 25px;
@@ -685,6 +692,8 @@ a, button {
             font-weight: bold;
             border-radius: 13px;
             cursor: pointer;
+            padding: 0;
+            outline: none;
 
             &:hover {
                 background-color: darken($accent, 10%);

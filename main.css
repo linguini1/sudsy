@@ -4,6 +4,7 @@ body, html {
   padding: 0;
   background-color: #EDE9EC;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -12,6 +13,14 @@ section {
 
 a, button {
   cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
 }
 
 .header {
@@ -63,9 +72,11 @@ a, button {
     color: #FB0E7D;
     text-decoration: none;
     font-size: 1.2em;
+    padding: 10%;
   }
   .header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #FB0E7D;
+    color: #46494C;
   }
   .header .logo {
     width: 20%;
@@ -343,10 +354,6 @@ a, button {
 
 .wash-things .wash-content li {
   font-size: 12px;
-}
-
-.wash-things .wash-content li:hover {
-  color: #FB0E7D;
 }
 
 @media (min-width: 681px) {
@@ -717,6 +724,8 @@ a, button {
           box-sizing: border-box;
   border: none;
   font-family: 'Montserrat', sans-serif;
+  outline-color: #FB0E7D;
+  padding: 2%;
 }
 
 @media (min-width: 1200px) {
@@ -743,6 +752,8 @@ a, button {
   font-weight: bold;
   border-radius: 13px;
   cursor: pointer;
+  padding: 0;
+  outline: none;
 }
 
 .contact form .submit:hover {
